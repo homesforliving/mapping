@@ -1,0 +1,36 @@
+OB_ZONE,SIMPLIFIED
+P1,Park
+RS1,Single Family Detached
+RM1LD,Apartment
+P2,Institutional 
+P3,Golf Course
+P5,Institutional 
+RS3,Single Family Detached
+RS4,Single Family Detached
+RM3,Apartment
+CD1,Commercial
+RM8,Apartment
+C2,Commercial
+RM2,Apartment
+RS5,Single Family Detached
+RM4,Apartment
+RMS7,Apartment
+RM1MD,Apartment
+RM-MC1,Mixed Use
+P7,Institutional 
+C4,Commercial
+P6,Institutional 
+CS2,Commercial
+RS2,Single Family Detached
+P4,Institutional 
+C3,Commercial
+RMMC4,Mixed Use
+P8,Institutional 
+C1,Commercial
+RM1HD,Apartment
+P9,Institutional 
+RM3HD,Apartment
+C5,Commercial
+RD1,Missing Middle
+CD2,Commercial
+CD3,Commercial
