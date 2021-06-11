@@ -19,9 +19,20 @@ SID_Zones <- read_sf(here("SidneyZoning", "Sidney_Zoning_LEO_v10.shp"))
 VIC_Zones <- read_sf(here("VictoriaZoning", "Zoning_Boundary.shp"))
 VR_Zones <- read_sf(here("ViewRoyalZoning", "VR_Zoning.shp"))
 
+x <- unique(VR_Zones$ZONE_)
+#write.csv(x, "Zones.csv")
 
-OB_LookupTable <- read.csv(here("OakBayZoning", "OB_Zone_Lookup.csv"), stringsAsFactors = F)
-SA_LookupTable <- read.csv(here("SaanichZoning", "Saanich_Zone_Lookup.csv"), stringsAsFactors = F)
+COL_LookupTable <- read.csv(here("ColwoodZoning", "zonemap_colwood.csv"), stringsAsFactors = F)
+ESQ_LookupTable <- read.csv(here("EsquimaltZoning", "zonemap_esquimalt.csv"), stringsAsFactors = F)
+LAN_LookupTable <- read.csv(here("LangfordZoning", "zonemap_langford.csv"), stringsAsFactors = F)
+NS_LookupTable <- read.csv(here("NorthSaanichZoning", "zonemap_northsaanich.csv"), stringsAsFactors = F)
+OB_LookupTable <- read.csv(here("OakBayZoning", "zonemap_oakbay.csv"), stringsAsFactors = F)
+SA_LookupTable <- read.csv(here("SaanichZoning", "zonemap_saanich.csv"), stringsAsFactors = F)
+SID_LookupTable <- read.csv(here("SidneyZoning", "zonemap_sidney.csv"), stringsAsFactors = F)
+# VIC currently not being read from a mapping. 
+VR_LookupTable <- read.csv(here("ViewRoyalZoning", "zonemap_viewroyal.csv"), stringsAsFactors = F)
+
+
 
 ###############
 # Process
@@ -63,14 +74,17 @@ VIC_Zones <- VIC_Zones %>% select(Zoning, SIMPLIFIED)
 
 VIC_Zones <- VIC_Zones %>% rename(TYPE = Zoning)
 
-# st_crs(VIC_Zones)
-# st_crs(OB_Zones)
-# st_crs(SA_Zones)
+st_crs(VIC_Zones)
+st_crs(OB_Zones)
+st_crs(SA_Zones)
+
+m1 <- mapview(SA_Zones, zcol = "SIMPLIFIED")
+mapshot(m1, url = here("map_output.html"), selfcontained=FALSE)
 
 # This is probably not the right way to do it.  Do we need to transform?
-SA_Zones <- st_set_crs(SA_Zones, 4617)
-OB_Zones <- st_set_crs(OB_Zones, 4617)
-VIC_Zones <- st_set_crs(VIC_Zones, 4617)
+SA_Zones <- st_transform(SA_Zones, 4617)
+OB_Zones <- st_transform(OB_Zones, 4617)
+VIC_Zones <- st_transform(VIC_Zones, 4617)
 
 ## Bind all the data into one large sf spatial object
 VIC_OB_SA_Zones <- rbind(VIC_Zones, OB_Zones, SA_Zones)
