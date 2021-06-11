@@ -1,75 +1,75 @@
 Zone_,SIMPLIFIED
-A1,
-AG1,
-AG2,
-AR1,
-C1,
-C2,
-C3,
-C4,
-C5,
-C6,
-C7,
-C8A,
-CD1,
-CD10,
-CD11,
-CD12,
-CD13,
-CD14,
-CD15,
-CD16,
-CD17,
-CD18,
-CD19,
-CD2,
-CD20,
-CD21,
-CD22,
-CD24,
-CD25,
-CD26,
-CD27,
-CD3,
-CD4,
-CD5,
-CD6,
-CD7,
-CD8,
-CD9,
-CN1,
-CS1,
-CS2,
-CT1,
-M1,
-M2,
-P1,
-P2,
-P3,
-P4,
-P5,
-P6,
-R1,
-R2,
-R3,
-R4,
-R5,
-R6,
-RBCD1,
-RBCD1A,
-RBCD2,
-RBCD3,
-RBCD3A,
-RBCD4,
-RBCD5,
-RC1,
-RM1,
-RM1A,
-RM1B,
-RM2,
-RM3,
-RM5,
-RM6,
-RM7,
-RT1,
-RT4,
+A1,Rural
+AG1,Agricultural
+AG2,Agricultural
+AR1,Single Family Detached
+C1,Commercial
+C2,Commercial
+C3,Commercial
+C4,Commercial
+C5,Commercial
+C6,Commercial
+C7,Commercial
+C8A,Commercial
+CD1,Mixed Use
+CD10,Mixed Use
+CD11,Mixed Use
+CD12,Mixed Use
+CD13,Mixed Use
+CD14,Mixed Use
+CD15,Mixed Use
+CD16,Mixed Use
+CD17,Mixed Use
+CD18,Mixed Use
+CD19,Mixed Use
+CD2,Mixed Use
+CD20,Mixed Use
+CD21,Mixed Use
+CD22,Mixed Use
+CD24,Mixed Use
+CD25,Mixed Use
+CD26,Mixed Use
+CD27,Mixed Use
+CD3,Mixed Use
+CD4,Mixed Use
+CD5,Mixed Use
+CD6,Mixed Use
+CD7,Mixed Use
+CD8,Mixed Use
+CD9,Mixed Use
+CN1,Mixed Use
+CS1,Commercial
+CS2,Commercial
+CT1,Commercial
+M1,Industrial
+M2,Industrial
+P1,Institutional
+P2,Institutional
+P3,Institutional
+P4,Park
+P5,Park
+P6,Park
+R1,Single Family Detached
+R2,Single Family Detached
+R3,Single Family Detached
+R4,Single Family Detached
+R5,Single Family Detached
+R6,Single Family Detached
+RBCD1,Single Family Detached
+RBCD1A,Single Family Detached
+RBCD2,Single Family Detached
+RBCD3,Single Family Detached
+RBCD3A,Single Family Detached
+RBCD4,Single Family Detached
+RBCD5,Single Family Detached
+RC1,Single Family Detached
+RM1,Missing Middle
+RM1A,Missing Middle
+RM1B,Missing Middle
+RM2,Missing Middle
+RM3,Apartment
+RM5,Apartment
+RM6,Apartment
+RM7,Apartment
+RT1,Mixed Use
+RT4,Mixed Use

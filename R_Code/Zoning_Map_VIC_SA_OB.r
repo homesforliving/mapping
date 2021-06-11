@@ -93,7 +93,7 @@ VIC_Zones <- VIC_Zones %>% rename(ZONE = Zoning)
 
 ## Bind all the data into one large sf spatial object
 # FIXME for some reason this fails if we add all the zones.
-ALL_zones <- rbind(ESQ_Zones, OB_Zones, SA_Zones, SID_Zones, VIC_Zones, VR_Zones)
+ALL_zones <- rbind(COL_Zones, LAN_Zones, ESQ_Zones, OB_Zones, SA_Zones, SID_Zones, VIC_Zones, VR_Zones)
 
 ## dissolved internal boundaries
 ALL_zones <- ALL_zones %>% group_by(SIMPLIFIED) %>% st_buffer(0) %>% summarize()
