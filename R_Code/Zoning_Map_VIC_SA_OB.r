@@ -4,9 +4,14 @@ library(dplyr)
 library(mapview)
 library(stringr)
 library(RColorBrewer)
+library(here)
+
+here()
+
+here("OakBayZoning", "Oak_Bay_Zoning.shp")
 
 ## Load the Oak Bay shape file
-OB_Zones <- read_sf("../data/zoning/OakBayZoning/Oak_Bay_Zoning.shp")
+OB_Zones <- read_sf(here("OakBayZoning", "Oak_Bay_Zoning.shp"))
 
 ## What are the zone types?
 unique(OB_Zones$ZONE_)
@@ -15,16 +20,16 @@ unique(OB_Zones$ZONE_)
 OB_Zones <- OB_Zones %>% select(AREA, ZONE_)
 
 ## Read the OB lookup table
-OB_LookupTable <- read.csv("../data/Zoning/OakBayZoning/OB_Zone_Lookup.csv", stringsAsFactors = F)
+OB_LookupTable <- read.csv(here("OakBayZoning", "OB_Zone_Lookup.csv"), stringsAsFactors = F)
 
 ## Merge with lookup table to get the simplified zone types
 OB_Zones <- merge(OB_Zones, OB_LookupTable, by.x = "ZONE_", by.y = "OB_ZONE")
 
 ## Load the Saanich Zones
-SA_Zones <- read_sf("../data/Zoning/SaanichZoning/Zoning.shp") %>% select(TYPE, CLASS)
+SA_Zones <- read_sf(here("SaanichZoning", "Zoning.shp")) %>% select(TYPE, CLASS)
 
 ## Load the Saanich look up table
-SA_LookupTable <- read.csv("../data/Zoning/SaanichZoning/Saanich_Zone_Lookup.csv", stringsAsFactors = F)
+SA_LookupTable <- read.csv(here("SaanichZoning", "Saanich_Zone_Lookup.csv"), stringsAsFactors = F)
 
 ## Joing with lookup table to get the simplifed zone names
 SA_Zones <- merge(SA_Zones, SA_LookupTable, by.x = "CLASS", by.y = "CLASS") %>% 
@@ -34,11 +39,11 @@ SA_Zones <- merge(SA_Zones, SA_LookupTable, by.x = "CLASS", by.y = "CLASS") %>%
 OB_Zones <- OB_Zones %>% select(ZONE_, SIMPLIFIED) %>% rename(TYPE = ZONE_)
 
 ## Load Victoria
-VIC_Zones <- read_sf("../data/Zoning/VictoriaZoning/Zoning_Boundary.shp")
+VIC_Zones <- read_sf(here("VictoriaZoning", "Zoning_Boundary.shp"))
 
 ## Start some logic to sort the victoria zone types (this is not at all complete!)
 VIC_Zones <- VIC_Zones %>% mutate(SIMPLIFIED = case_when(substr(Zoning, 1, 2) == "R1" ~ "Single Family Detached",
-                                            substr(Zoning, 1, 1) == "C" ~ "Commerical"))
+                                            substr(Zoning, 1, 1) == "C" ~ "Commercial"))
 
 ## define missing middle zones
 missingMid_Vic <- c("R-2", "R-J", "R-K", "R-N", "RT")
@@ -55,6 +60,15 @@ VIC_Zones <- VIC_Zones %>% select(Zoning, SIMPLIFIED)
 
 VIC_Zones <- VIC_Zones %>% rename(TYPE = Zoning)
 
+# st_crs(VIC_Zones)
+# st_crs(OB_Zones)
+# st_crs(SA_Zones)
+
+# This is probably not the right way to do it.  Do we need to transform?
+SA_Zones <- st_set_crs(SA_Zones, 4617)
+OB_Zones <- st_set_crs(OB_Zones, 4617)
+VIC_Zones <- st_set_crs(VIC_Zones, 4617)
+
 ## Bind all the data into one large sf spatial object
 VIC_OB_SA_Zones <- rbind(VIC_Zones, OB_Zones, SA_Zones)
 
@@ -63,7 +77,7 @@ VIC_OB_SA_Zones <- VIC_OB_SA_Zones %>% group_by(SIMPLIFIED) %>% st_buffer(0) %>%
 
 ## make a map object with colors based on the simplified zone names save the map as an html file 
 m1 <- mapview(VIC_OB_SA_Zones, zcol = "SIMPLIFIED")
-mapshot(m1, url = paste0(getwd(), "/OB_VIC_SA.html"))
+mapshot(m1, url = paste0(getwd(), "/map_output.html"))
 
 ## Leo asked for a csv file with all the CoV zoes, this bit of code makes that
 unique(VIC_Zones$TYPE)
