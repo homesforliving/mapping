@@ -77,7 +77,7 @@ VIC_OB_SA_Zones <- VIC_OB_SA_Zones %>% group_by(SIMPLIFIED) %>% st_buffer(0) %>%
 
 ## make a map object with colors based on the simplified zone names save the map as an html file 
 m1 <- mapview(VIC_OB_SA_Zones, zcol = "SIMPLIFIED")
-mapshot(m1, url = paste0(getwd(), "/map_output.html"))
+mapshot(m1, url = paste0(getwd(), "/map_output.html"), selfcontained=FALSE)
 
 ## Leo asked for a csv file with all the CoV zoes, this bit of code makes that
 unique(VIC_Zones$TYPE)
