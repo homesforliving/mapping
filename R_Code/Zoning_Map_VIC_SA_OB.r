@@ -36,15 +36,15 @@ VR_LookupTable <- read.csv(here("ViewRoyalZoning", "zonemap_viewroyal.csv"), str
 
 # correct CRS
 # Most are in 4269 but not all, transform them to 4269.
-COL_Zones <- st_transform(COL_Zones, 4269)
-ESQ_Zones <- st_transform(ESQ_Zones, 4269)
-LAN_Zones <- st_set_crs(LAN_Zones, 4269) #langford has no CRS set???
-NS_Zones <- st_transform(NS_Zones, 4269)
-OB_Zones <- st_transform(OB_Zones, 4269)
-SA_Zones <- st_transform(SA_Zones, 4269)
-SID_Zones <- st_transform(SID_Zones, 4269)
-VIC_Zones <- st_transform(VIC_Zones, 4269)
-VR_Zones <- st_transform(VR_Zones, 4269)
+# COL_Zones <- st_transform(COL_Zones, 4269)
+# ESQ_Zones <- st_transform(ESQ_Zones, 4269)
+# LAN_Zones <- st_set_crs(LAN_Zones, 4269) #langford has no CRS set???
+# NS_Zones <- st_transform(NS_Zones, 4269)
+# OB_Zones <- st_transform(OB_Zones, 4269)
+# SA_Zones <- st_transform(SA_Zones, 4269)
+# SID_Zones <- st_transform(SID_Zones, 4269)
+# VIC_Zones <- st_transform(VIC_Zones, 4269)
+# VR_Zones <- st_transform(VR_Zones, 4269)
 
 ## What are the zone types?
 # unique(OB_Zones$ZONE_)
@@ -66,7 +66,7 @@ ESQ_Zones <- merge(ESQ_Zones, ESQ_LookupTable, by.x = "ZONE", by.y = "Zone")
 LAN_Zones <- merge(LAN_Zones, LAN_LookupTable, by.x = "ZONE", by.y = "ZONE_ABR")
 NS_Zones <- merge(NS_Zones, NS_LookupTable, by.x = "ZONE", by.y = "Zone")
 OB_Zones <- merge(OB_Zones, OB_LookupTable, by.x = "ZONE", by.y = "OB_ZONE")
-SA_Zones <- merge(SA_Zones, SA_LookupTable, by.x = "ZONE", by.y = "CLASS") %>% 
+SA_Zones <- merge(SA_Zones, SA_LookupTable, by.x = "CLASS", by.y = "CLASS") %>% 
   select(ZONE, SIMPLIFIED)
 SID_Zones <- merge(SID_Zones, SID_LookupTable, by.x = "ZONE", by.y = "ZoneClass")
 VR_Zones <- merge(VR_Zones, VR_LookupTable, by.x = "ZONE", by.y = "ZONE_")
@@ -93,6 +93,27 @@ VIC_Zones <- VIC_Zones %>% rename(ZONE = Zoning)
 
 ## Bind all the data into one large sf spatial object
 # FIXME for some reason this fails if we add all the zones.
+
+####
+#FIX for Colwood is to remove the invalid row
+COL_Zones <- COL_Zones[!is.na(st_is_valid(COL_Zones)),]
+
+#FIX Langford by giving it a proper crs
+st_crs(LAN_Zones) <- "+proj=utm +zone=10 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"
+
+#Just set everything to 3005, BC Albers  \_(ツ)_/¯
+LAN_Zones <- st_transform(LAN_Zones, 3005)
+COL_Zones <- st_transform(COL_Zones, 3005)
+ESQ_Zones <- st_transform(ESQ_Zones, 3005)
+NS_Zones <- st_transform(NS_Zones, 3005)
+OB_Zones <- st_transform(OB_Zones, 3005)
+SA_Zones <- st_transform(SA_Zones, 3005)
+SID_Zones <- st_transform(SID_Zones, 3005)
+VIC_Zones <- st_transform(VIC_Zones, 3005)
+VR_Zones <- st_transform(VR_Zones, 3005)
+
+####
+
 ALL_zones <- rbind(COL_Zones, LAN_Zones, ESQ_Zones, OB_Zones, SA_Zones, SID_Zones, VIC_Zones, VR_Zones)
 
 ## dissolved internal boundaries
