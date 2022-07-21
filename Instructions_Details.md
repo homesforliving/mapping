@@ -1,4 +1,4 @@
-# Zoning types and definitions (with examples): 
+# Zoning types and definitions: 
 
 * Single family / detached house (SFH)
 * **Duplex**
