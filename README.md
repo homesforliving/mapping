@@ -1,5 +1,5 @@
 # mapping
-This repo contains Mapping and Zoning related projects for the Capital Regional District in B.C., Canada.
+This repo contains Mapping and Zoning related projects for Homes for Living within the Capital Regional District in B.C., Canada.
 
 The goal is to unify the zoning of municipalities making up the CRD for easier GIS analysis.
 
