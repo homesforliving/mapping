@@ -5,8 +5,7 @@
 * **Townhouse**
 * **Low-rise**
 * High-rise
-* Mixed use low-rise
-* Mixed use high-rise
+* Mixed use
 * Commercial
 * Industrial
 * Recreational / Public (separate for park?)
@@ -16,3 +15,4 @@
 * Golf course
 
 The zoning types indicated in bold are also classified as "Missing Middle" housing, i.e. middle-density housing 
+
