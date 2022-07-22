@@ -9,25 +9,25 @@ library(here)
 ###############
 # Load
 ###############
-COL_Zones <- read_sf(here("ColwoodZoning", "Zoning.shp"))
-ESQ_Zones <- read_sf(here("EsquimaltZoning", "Esquimalt.shp"))
-LAN_Zones <- read_sf(here("LangfordZoning", "Langford_Zoning.shp"))
-NS_Zones <- read_sf(here("NorthSaanichZoning", "NorthSaanich_Zoning.shp"))
-OB_Zones <- read_sf(here("OakBayZoning", "Oak_Bay_Zoning.shp"))
-SA_Zones <- read_sf(here("SaanichZoning", "Zoning.shp"))
-SID_Zones <- read_sf(here("SidneyZoning", "Sidney_Zoning_LEO_v10.shp"))
-VIC_Zones <- read_sf(here("VictoriaZoning", "Zoning_Boundary.shp"))
-VR_Zones <- read_sf(here("ViewRoyalZoning", "VR_Zoning.shp"))
+COL_Zones <- read_sf(here("data/ColwoodZoning", "Zoning.shp"))
+ESQ_Zones <- read_sf(here("data/EsquimaltZoning", "Esquimalt.shp"))
+LAN_Zones <- read_sf(here("data/LangfordZoning", "Langford_Zoning.shp"))
+NS_Zones <- read_sf(here("data/NorthSaanichZoning", "NorthSaanich_Zoning.shp"))
+OB_Zones <- read_sf(here("data/OakBayZoning", "Oak_Bay_Zoning.shp"))
+SA_Zones <- read_sf(here("data/SaanichZoning", "Zoning.shp"))
+SID_Zones <- read_sf(here("data/SidneyZoning", "Sidney_Zoning_LEO_v10.shp"))
+VIC_Zones <- read_sf(here("data/VictoriaZoning", "Zoning_Boundary.shp"))
+VR_Zones <- read_sf(here("data/ViewRoyalZoning", "VR_Zoning.shp"))
 
-COL_LookupTable <- read.csv(here("ColwoodZoning", "zonemap_colwood.csv"), stringsAsFactors = F)
-ESQ_LookupTable <- read.csv(here("EsquimaltZoning", "zonemap_esquimalt.csv"), stringsAsFactors = F)
-LAN_LookupTable <- read.csv(here("LangfordZoning", "zonemap_langford.csv"), stringsAsFactors = F)
-NS_LookupTable <- read.csv(here("NorthSaanichZoning", "zonemap_northsaanich.csv"), stringsAsFactors = F)
-OB_LookupTable <- read.csv(here("OakBayZoning", "zonemap_oakbay.csv"), stringsAsFactors = F)
-SA_LookupTable <- read.csv(here("SaanichZoning", "zonemap_saanich.csv"), stringsAsFactors = F)
-SID_LookupTable <- read.csv(here("SidneyZoning", "zonemap_sidney.csv"), stringsAsFactors = F)
+COL_LookupTable <- read.csv(here("data/ColwoodZoning", "zonemap_colwood.csv"), stringsAsFactors = F)
+ESQ_LookupTable <- read.csv(here("data/EsquimaltZoning", "zonemap_esquimalt.csv"), stringsAsFactors = F)
+LAN_LookupTable <- read.csv(here("data/LangfordZoning", "zonemap_langford.csv"), stringsAsFactors = F)
+NS_LookupTable <- read.csv(here("data/NorthSaanichZoning", "zonemap_northsaanich.csv"), stringsAsFactors = F)
+OB_LookupTable <- read.csv(here("data/OakBayZoning", "zonemap_oakbay.csv"), stringsAsFactors = F)
+SA_LookupTable <- read.csv(here("data/SaanichZoning", "zonemap_saanich.csv"), stringsAsFactors = F)
+SID_LookupTable <- read.csv(here("data/SidneyZoning", "zonemap_sidney.csv"), stringsAsFactors = F)
 # VIC currently not being read from a mapping. 
-VR_LookupTable <- read.csv(here("ViewRoyalZoning", "zonemap_viewroyal.csv"), stringsAsFactors = F)
+VR_LookupTable <- read.csv(here("data/ViewRoyalZoning", "zonemap_viewroyal.csv"), stringsAsFactors = F)
 
 
 ###############
@@ -71,11 +71,11 @@ SA_Zones <- merge(SA_Zones, SA_LookupTable, by.x = "CLASS", by.y = "CLASS") %>%
 SID_Zones <- merge(SID_Zones, SID_LookupTable, by.x = "ZONE", by.y = "ZoneClass")
 VR_Zones <- merge(VR_Zones, VR_LookupTable, by.x = "ZONE", by.y = "ZONE_")
 
-
+# VICTORIA ####
 ## Start some logic to sort the victoria zone types (this is not at all complete!)
-VIC_Zones <- VIC_Zones %>% mutate(SIMPLIFIED = case_when(substr(Zoning, 1, 2) == "R1" ~ "Single Family Detached",
-                                            substr(Zoning, 1, 1) == "C" ~ "Commercial"))
-
+VIC_Zones <- VIC_Zones %>% 
+  mutate(SIMPLIFIED = case_when(substr(Zoning, 1, 2) == "R1" ~ "Single Family Detached",
+                                substr(Zoning, 1, 1) == "C" ~ "Commercial"))
 ## define missing middle zones
 missingMid_Vic <- c("R-2", "R-J", "R-K", "R-N", "RT")
 
@@ -88,16 +88,16 @@ VIC_Zones$SIMPLIFIED[VIC_Zones$Zoning %in% appt_vic] <- "Missing Middle"
 
 ## select only what is needed and rename to match SA and OB
 VIC_Zones <- VIC_Zones %>% select(Zoning, SIMPLIFIED)
-
 VIC_Zones <- VIC_Zones %>% rename(ZONE = Zoning)
 
 ## Bind all the data into one large sf spatial object
 # FIXME for some reason this fails if we add all the zones.
 
-####
+# COLWOOD ####
 #FIX for Colwood is to remove the invalid row
 COL_Zones <- COL_Zones[!is.na(st_is_valid(COL_Zones)),]
 
+# LANGFORD ####
 #FIX Langford by giving it a proper crs
 st_crs(LAN_Zones) <- "+proj=utm +zone=10 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"
 
@@ -121,9 +121,13 @@ ALL_zones <- ALL_zones %>% group_by(SIMPLIFIED) %>% st_buffer(0) %>% summarize()
 
 ## make a map object with colors based on the simplified zone names save the map as an html file 
 m1 <- mapview(ALL_zones, zcol = "SIMPLIFIED")
-mapshot(m1, url = here("map_output.html"), selfcontained=FALSE)
 
-## Leo asked for a csv file with all the CoV zoes, this bit of code makes that
+m1 <- mapview(VR_Zones, zcol = "SIMPLIFIED")
+m1
+
+mapshot(m1, url = here("map_output.html"), selfcontained = FALSE)
+
+## Leo asked for a csv file with all the CoV zones, this bit of code makes that
 unique(VIC_Zones$TYPE)
 x<-VIC_Zones %>% st_drop_geometry() %>% group_by(TYPE, SIMPLIFIED) %>% summarize(numberPolys = n()) 
 write.csv(x, "VictoriaZones.csv", row.names = F)
