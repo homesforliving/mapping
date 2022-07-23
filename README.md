@@ -17,15 +17,15 @@ For the full list and details, click [here](https://github.com/housesforliving/m
 
 | Municipality | Population | Size (sq.km) | Pop. Density (per sq.km)| Shapefile | Categories Assigned | Zoning Doc. Link|
 | ------------ | ---------- | ------------ | ------------------------------| --------- | ----------------- |---|
-| Saanich | 117,735 | 103.59 | 1,136.6 | :heavy_check_mark: | | 
-| Victoria | 91,867 | 19.45 | 4,722.3 | :heavy_check_mark: | | 
-| Langford | 46,584 | 41.43 | 1,124.4 | :heavy_check_mark: | | 
-| Colwood | 18,961 | 17.66 | 1,073.6 | :heavy_check_mark: | | 
-| Oak Bay | 17,990 | 10.52 | 1,710.1 | :heavy_check_mark: | | 
-| Esquimalt | 17,533 | 7.08 | 2,476.7 | :heavy_check_mark: || https://www.esquimalt.ca/business-development/building-zoning
-| Central Saanich | 17,385 | 41.20 | 421.9 | :x: ||
-| Sidney | 12,318 | 5.11 | 2,412.8 | :heavy_check_mark: ||
-| North Saanich | 12,235 | 37.16 | 329.2 | :heavy_check_mark: ||
-| View Royal | 11,575 | 14.33 | 807.6 | :heavy_check_mark: ||
-| Metchosin | 5,067 | 69.57 |72.8	| :x: ||
-| Highlands | 2,482 | 38.01 | 65.3 | :heavy_check_mark: ||
+| Saanich | 117,735 | 103.59 | 1,136.6 | :heavy_check_mark: | :heavy_check_mark: | 
+| Victoria | 91,867 | 19.45 | 4,722.3 | :heavy_check_mark: | [#7](https://github.com/housesforliving/mapping/issues/7) | 
+| Langford | 46,584 | 41.43 | 1,124.4 | :heavy_check_mark: | [#8](https://github.com/housesforliving/mapping/issues/8) | 
+| Colwood | 18,961 | 17.66 | 1,073.6 | :heavy_check_mark: | [#9](https://github.com/housesforliving/mapping/issues/9) | 
+| Oak Bay | 17,990 | 10.52 | 1,710.1 | :heavy_check_mark: | [#10](https://github.com/housesforliving/mapping/issues/10)| 
+| Esquimalt | 17,533 | 7.08 | 2,476.7 | :heavy_check_mark: | [#11](https://github.com/housesforliving/mapping/issues/11) | https://www.esquimalt.ca/business-development/building-zoning
+| Central Saanich | 17,385 | 41.20 | 421.9 | :x: | [#12](https://github.com/housesforliving/mapping/issues/12) |
+| Sidney | 12,318 | 5.11 | 2,412.8 | :heavy_check_mark: |[#13](https://github.com/housesforliving/mapping/issues/13) |
+| North Saanich | 12,235 | 37.16 | 329.2 | :heavy_check_mark: |[#14](https://github.com/housesforliving/mapping/issues/14)|
+| View Royal | 11,575 | 14.33 | 807.6 | :heavy_check_mark: |[#15](https://github.com/housesforliving/mapping/issues/15)|
+| Metchosin | 5,067 | 69.57 |72.8	| :x: |[#16](https://github.com/housesforliving/mapping/issues/16)|
+| Highlands | 2,482 | 38.01 | 65.3 | :heavy_check_mark: |[#17](https://github.com/housesforliving/mapping/issues/17)|
