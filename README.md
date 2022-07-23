@@ -1,19 +1,19 @@
 # mapping
 This repo contains Mapping and Zoning related projects for Homes for Living within the Capital Regional District in B.C., Canada.
 
-The goal is to unify the zoning of municipalities making up the CRD for easier GIS analysis.
+There are hundreds of different zones in the various municipalities which are difficult to understand.  The goal of this project is to map these zones to a harmonized subset that describes what can be built on the land as simply as possible, as well as laying the groundwork for further GIS analysis of the broader region.
 
-Differing municipalities have varying numbers of zoning types; Saanich, for example, has under 20, while the municipality of Victoria has > 100.
+Differing municipalities have varying numbers of zones; Saanich, for example, has only a few dozen, while the municipality of Victoria has over 700.
 
 A preview of the dataset in its current state is located [here](https://housesforliving.github.io/mapping/).
 
-**Unifying zoning types:**
+**Harmonized zoning categories**
 
-We are currently working to figure out which categories the various zonings fall into. For example, **Parks and Recreation, Industrial and Commercial** are categories we want to capture. We also want to capture general housing characteristics namely by density, distinguishing **single family detached housing (SFH/Duplexes)** from higher densities like **Missing Middle** and **Low Rise Residential / Apartments**.
-
-For the full list and details, click [here](https://github.com/housesforliving/mapping/blob/main/harmonized_zones.md).
+The [simplified zoning categories are listed here](https://github.com/housesforliving/mapping/blob/main/harmonized_zones.md) and are based on the ones used in the similar [UBC zoning project](https://zoning.sociology.ubc.ca/).   We also want to capture general housing characteristics namely by density, distinguishing **single family detached housing (SFH/Duplexes)** from higher densities like **Missing Middle** and **Low Rise Residential / Apartments**.
 
 **Current Status:**
+
+See the table below for status of the project by municipality.  To map a municipality's zoning to the harmonized set, please assign yourself to the issue linked, then complete the mapping CSV in the associated data folder.
 
 | Municipality | Population | Size (sq.km) | Pop. Density (per sq.km)| Shapefile | Categories Assigned | Zoning Doc. Link|
 | ------------ | ---------- | ------------ | ------------------------------| --------- | ----------------- |---|
