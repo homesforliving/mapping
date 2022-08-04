@@ -1,44 +1,48 @@
 CLASS,SIMPLIFIED,NOTES
-AM1,,Amenity 1
-AM2,,Amenity 2
-BMCD1,,Bear Mountain Comprehensive Development
-C1,,Conservation 1
-CD2,,Comprehensive Development 2
-GB1,,Greenbelt 1
-GB1A,,Greenbelt 1A
-GB2,,Greenbelt 2
-M1,,General Industr
-M2,,Medium Industri
-M3,,Highwest Indust
-P1,,Park 1
-P2,,Public 2
-P3,,Public 3
-R1,,Rural 1
-R2,,Rural 2
-R3,,Rural 3
-R3A,,Rural 3A
-R3B,,Rural 3B
-R3C,,Rural Residential 3
-R3D,,Rural R3D
-R4,,Rural Residential 4
-R5,,Rural 5
-R6,,Rural 6
-R7,,Rural 7
-R8,,Rural 8
-RR1,,Rural Residential 1
-RR13,,Rural Residential 13
-RR14,,Rural Residential 14
-RR15,,Rural Residential 15
-RR16,,Rural Residential 16
-RR2,,Rural Residential 2
-RR2A,,Rural Residential 2A
-RR3,,Rural Residential 3
-RR4,,Rural Residential 4
-RR5,,Rural Residential 5
-RR7,,Rural Residential 7
-RR8,,Rural Residential 8
-W1,,Water 1
-W2,,Water 2
+AM1,Rural Residential,Amenity 1
+AM2,Rural Residential,Amenity 2
+BMCD1,Comprehensive Development,Bear Mountain Comprehensive Development
+C1,Recreational,Conservation 1
+CD2,Comprehensive Development,Comprehensive Development 2
+GB1,Rural Residential,Greenbelt 1
+GB1A,Rural Residential,Greenbelt 1A - NOTE: no more than 4 dwellings on each lot
+GB2,Rural Residential,Greenbelt 2
+M1,Industrial,General Industr - NOTE: kind of include commercial
+M2,Industrial,Medium Industri - NOTE: kind of include commercial
+M3,Industrial,Highwest Indust
+P1,Recreational,Park 1
+P2,Recreational,Public 2 - NOTE: uses incl community gardens fire hall muni offices school etc
+P3,Recreational,Public 3 - NOTE: this is a lot incl residential agriculture muni offices recreation
+R1,Rural Residential,Rural 1
+R2,Rural Residential,Rural 2
+R3,Rural Residential,Rural 3
+R3A,Rural Residential,Rural 3A
+R3B,Rural Residential,Rural 3B
+R3C,Rural Residential,Rural Residential 3
+R3D,Rural Residential,Rural R3D
+R4,Rural Residential,Rural Residential 4
+R5,Rural Residential,Rural 5
+R6,Rural Residential,Rural 6
+R7,Rural Residential,Rural 7
+R8,Rural Residential,Rural 8
+RR1,Rural Residential,Rural Residential 1
+RR2,Rural Residential,Rural Residential 2
+RR2A,Rural Residential,Rural Residential 2A
+RR3,Rural Residential,Rural Residential 3
+RR4,Rural Residential,Rural Residential 4
+RR5,Rural Residential,Rural Residential 5
+RR7,Rural Residential,Rural Residential 7 - NOTE: can have 2 dwellings per lot
+RR8,Rural Residential,Rural Residential 8
+RR9,Rural Residential,Rural Residential 9
+RR10,Rural Residential,Rural Residential 10
+RR11,Rural Residential,Rural Residential 11
+RR12,Rural Residential,Rural Residential 12
+RR13,Rural Residential,Rural Residential 13
+RR14,Rural Residential,Rural Residential 14
+RR15,Rural Residential,Rural Residential 15
+RR16,Rural Residential,Rural Residential 16
+W1,NA,Water 1
+W2,NA,Water 2
 
 
 
