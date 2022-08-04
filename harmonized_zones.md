@@ -6,6 +6,7 @@
 |Missing Middle | Residential low rise, triplexes to 3 floor apartments. |
 |Apartment | Residential apartment buildings higher than 4 floors |
 |Mixed use  | Combines residential with commercial  |
+|Rural Residential | Areas zoned as rural / rural residential (as opposed to 'Agricultural') |
 |Commercial   | Commercial uses only	   |
 |Comprehensive Development | Lot “Spot Zoned” for uses specific to site, may or may not include residential	 |
 |Industrial | Primary Industrial Use Only (rarely includes residential as live/work space or caretaker residence only)	 |
