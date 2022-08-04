@@ -1,36 +1,36 @@
-OB_ZONE,SIMPLIFIED
-P1,Park
-RS1,SFH
-RM1LD,L MURB
-P2,Institutional 
-P3,Golf Course
-P5,Institutional 
-RS3,SFH
-RS4,SFH
-RM3,M MURB
-CD1,Commercial
-RM8,H MURB
-C2,Commercial
-RM2,L MURB
-RS5,SFH
-RM4,M MURB
-RMS7,H MURB
-RM1MD,M MURB
-RM-MC1,Mixed Use
-P7,Institutional 
-C4,Commercial
-P6,Institutional 
-CS2,Commercial
-RS2,SFH
-P4,Institutional 
-C3,Commercial
-RMMC4,Mixed Use
-P8,Institutional 
-C1,Commercial
-RM1HD,H MURB
-P9,Institutional 
-RM3HD,H MURB
-C5,Commercial
-RD1,UNK
-CD2,Commercial
-CD3,Commercial
+OB_ZONE,SIMPLIFIED,NOTES
+P1,Recreational,
+RS1,Single/Duplex,
+RM1LD,L MURB,
+P2,Institutional,
+P3,Recreational,
+P5,Institutional,
+RS3,Single/Duplex,
+RS4,Single/Duplex,
+RM3,M MURB,
+CD1,Commercial,
+RM8,H MURB,
+C2,Commercial,
+RM2,L MURB,
+RS5,Single/Duplex,
+RM4,M MURB,
+RMS7,H MURB,
+RM1MD,M MURB,
+RM-MC1,Mixed Use,
+P7,Institutional,
+C4,Commercial,
+P6,Institutional,
+CS2,Commercial,
+RS2,Single/Duplex,
+P4,Institutional,
+C3,Commercial,
+RMMC4,Mixed Use,
+P8,Institutional,
+C1,Commercial,
+RM1HD,H MURB,
+P9,Institutional,
+RM3HD,H MURB,
+C5,Commercial,
+RD1,Unclassified,
+CD2,Commercial,
+CD3,Commercial,

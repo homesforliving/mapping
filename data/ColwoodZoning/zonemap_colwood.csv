@@ -1,75 +1,75 @@
-Zone_,SIMPLIFIED
-A1,Rural
-AG1,Agricultural
-AG2,Agricultural
-AR1,Single Family Detached
-C1,Commercial
-C2,Commercial
-C3,Commercial
-C4,Commercial
-C5,Commercial
-C6,Commercial
-C7,Commercial
-C8A,Commercial
-CD1,Mixed Use
-CD10,Mixed Use
-CD11,Mixed Use
-CD12,Mixed Use
-CD13,Mixed Use
-CD14,Mixed Use
-CD15,Mixed Use
-CD16,Mixed Use
-CD17,Mixed Use
-CD18,Mixed Use
-CD19,Mixed Use
-CD2,Mixed Use
-CD20,Mixed Use
-CD21,Mixed Use
-CD22,Mixed Use
-CD24,Mixed Use
-CD25,Mixed Use
-CD26,Mixed Use
-CD27,Mixed Use
-CD3,Mixed Use
-CD4,Mixed Use
-CD5,Mixed Use
-CD6,Mixed Use
-CD7,Mixed Use
-CD8,Mixed Use
-CD9,Mixed Use
-CN1,Mixed Use
-CS1,Commercial
-CS2,Commercial
-CT1,Commercial
-M1,Industrial
-M2,Industrial
-P1,Institutional
-P2,Institutional
-P3,Institutional
-P4,Park
-P5,Park
-P6,Park
-R1,Single Family Detached
-R2,Single Family Detached
-R3,Single Family Detached
-R4,Single Family Detached
-R5,Single Family Detached
-R6,Single Family Detached
-RBCD1,Single Family Detached
-RBCD1A,Single Family Detached
-RBCD2,Single Family Detached
-RBCD3,Single Family Detached
-RBCD3A,Single Family Detached
-RBCD4,Single Family Detached
-RBCD5,Single Family Detached
-RC1,Single Family Detached
-RM1,Missing Middle
-RM1A,Missing Middle
-RM1B,Missing Middle
-RM2,Missing Middle
-RM3,Apartment
-RM5,Apartment
-RM6,Apartment
-RM7,Apartment
-RT1,Mixed Use
-RT4,Mixed Use
+Zone_,SIMPLIFIED,NOTES
+A1,Rural,
+AG1,Agricultural,
+AG2,Agricultural,
+AR1,Single/Duplex,
+C1,Commercial,
+C2,Commercial,
+C3,Commercial,
+C4,Commercial,
+C5,Commercial,
+C6,Commercial,
+C7,Commercial,
+C8A,Commercial,
+CD1,Mixed Use,
+CD10,Mixed Use,
+CD11,Mixed Use,
+CD12,Mixed Use,
+CD13,Mixed Use,
+CD14,Mixed Use,
+CD15,Mixed Use,
+CD16,Mixed Use,
+CD17,Mixed Use,
+CD18,Mixed Use,
+CD19,Mixed Use,
+CD2,Mixed Use,
+CD20,Mixed Use,
+CD21,Mixed Use,
+CD22,Mixed Use,
+CD24,Mixed Use,
+CD25,Mixed Use,
+CD26,Mixed Use,
+CD27,Mixed Use,
+CD3,Mixed Use,
+CD4,Mixed Use,
+CD5,Mixed Use,
+CD6,Mixed Use,
+CD7,Mixed Use,
+CD8,Mixed Use,
+CD9,Mixed Use,
+CN1,Mixed Use,
+CS1,Commercial,
+CS2,Commercial,
+CT1,Commercial,
+M1,Industrial,
+M2,Industrial,
+P1,Institutional,
+P2,Institutional,
+P3,Institutional,
+P4,Recreational,
+P5,Recreational,
+P6,Recreational,
+R1,Single/Duplex,
+R2,Single/Duplex,
+R3,Single/Duplex,
+R4,Single/Duplex,
+R5,Single/Duplex,
+R6,Single/Duplex,
+RBCD1,Single/Duplex,
+RBCD1A,Single/Duplex,
+RBCD2,Single/Duplex,
+RBCD3,Single/Duplex,
+RBCD3A,Single/Duplex,
+RBCD4,Single/Duplex,
+RBCD5,Single/Duplex,
+RC1,Single/Duplex,
+RM1,Missing Middle,
+RM1A,Missing Middle,
+RM1B,Missing Middle,
+RM2,Missing Middle,
+RM3,Apartment,
+RM5,Apartment,
+RM6,Apartment,
+RM7,Apartment,
+RT1,Mixed Use,
+RT4,Mixed Use,
