@@ -28,4 +28,4 @@ See the table below for status of the project by municipality.  To map a municip
 | North Saanich | 12,235 | 37.16 | 329.2 | :heavy_check_mark: |[#14](https://github.com/housesforliving/mapping/issues/14)|
 | View Royal | 11,575 | 14.33 | 807.6 | :heavy_check_mark: |[#15](https://github.com/housesforliving/mapping/issues/15)|
 | Metchosin | 5,067 | 69.57 |72.8	| :x: |[#16](https://github.com/housesforliving/mapping/issues/16)|
-| Highlands | 2,482 | 38.01 | 65.3 | :heavy_check_mark: |[#17](https://github.com/housesforliving/mapping/issues/17)|
+| Highlands | 2,482 | 38.01 | 65.3 | :heavy_check_mark: |[#17](https://github.com/housesforliving/mapping/issues/17)| https://www.highlands.ca/DocumentCenter/View/5053/100---Zoning-Bylaw-No-100-1998-Consolidated-Version---June-4-2018
