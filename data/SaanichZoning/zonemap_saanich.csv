@@ -1,14 +1,14 @@
-CLASS,SIMPLIFIED
-Single Family,Single/Duplex
-Rural,Single/Duplex
-Attached Housing,Missing Middle
-Two Family Dwelling,Single/Duplex
-Apartment,Apartment
-Multi-Family Commercial,Mixed Use
-Residential Comprehensive,Mixed Use
-Residential Personal Care,Mixed Use
-Residential Mixed,Mixed Use
-Commercial,Commercial
-Comprehensive Development,Comprehensive Development
-Public,Recreational
-Recreation and Open Space,Recreational
+CLASS,SIMPLIFIED,NOTES
+Single Family,Single/Duplex,
+Rural,Single/Duplex,
+Attached Housing,Missing Middle,
+Two Family Dwelling,Single/Duplex,
+Apartment,Apartment,
+Multi-Family Commercial,Mixed Use,
+Residential Comprehensive,Mixed Use,
+Residential Personal Care,Mixed Use,
+Residential Mixed,Mixed Use,
+Commercial,Commercial,
+Comprehensive Development,Comprehensive Develo,
+Public,Recreational,
+Recreation and Open Space,Recreational,
