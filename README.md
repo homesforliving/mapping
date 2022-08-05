@@ -20,7 +20,7 @@ See the table below for status of the project by municipality.  To map a municip
 | Saanich | 117,735 | 103.59 | 1,136.6 | :heavy_check_mark: | :heavy_check_mark: | 
 | Victoria | 91,867 | 19.45 | 4,722.3 | :heavy_check_mark: | [#7](https://github.com/housesforliving/mapping/issues/7) | 
 | Langford | 46,584 | 41.43 | 1,124.4 | :heavy_check_mark: | [#8](https://github.com/housesforliving/mapping/issues/8) | 
-| Colwood | 18,961 | 17.66 | 1,073.6 | :heavy_check_mark: | :heavy_check_mark: | 
+| Colwood | 18,961 | 17.66 | 1,073.6 | :heavy_check_mark: | :heavy_check_mark: | https://colwood.civicweb.net/document/1999/ |
 | Oak Bay | 17,990 | 10.52 | 1,710.1 | :heavy_check_mark: | [#10](https://github.com/housesforliving/mapping/issues/10)| 
 | Esquimalt | 17,533 | 7.08 | 2,476.7 | :heavy_check_mark: | [#11](https://github.com/housesforliving/mapping/issues/11) | https://www.esquimalt.ca/business-development/building-zoning
 | Central Saanich | 17,385 | 41.20 | 421.9 | :x: | [#12](https://github.com/housesforliving/mapping/issues/12) |
