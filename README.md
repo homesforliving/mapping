@@ -17,7 +17,7 @@ See the table below for status of the project by municipality.  To map a municip
 
 | Municipality | Population | Size (sq.km) | Pop. Density (per sq.km)| Shapefile | Categories Assigned | Zoning Doc. Link|
 | ------------ | ---------- | ------------ | ------------------------------| --------- | ----------------- |---|
-| Saanich | 117,735 | 103.59 | 1,136.6 | :heavy_check_mark: | :heavy_check_mark: | 
+| Saanich | 117,735 | 103.59 | 1,136.6 | :heavy_check_mark: | :heavy_check_mark: | https://www.saanich.ca/assets/Local~Government/Documents/Planning/zone8200.pdf
 | Victoria | 91,867 | 19.45 | 4,722.3 | :heavy_check_mark: | [#7](https://github.com/housesforliving/mapping/issues/7) | https://www.victoria.ca/EN/main/residents/planning-development/development-services/zoning/zoning-regulation-bylaw.html Downtown: https://www.victoria.ca/assets/Departments/Planning~Development/Development~Services/Zoning/Bylaws/Zoning%20Bylaw%202018.pdf 
 | Langford | 46,584 | 41.43 | 1,124.4 | :heavy_check_mark: | [#8](https://github.com/housesforliving/mapping/issues/8) | https://www.langford.ca/wp-content/uploads/2020/10/Zoning-Bylaw-20210621.pdf |
 | Colwood | 18,961 | 17.66 | 1,073.6 | :heavy_check_mark: | :heavy_check_mark: | https://colwood.civicweb.net/document/1999/ |
