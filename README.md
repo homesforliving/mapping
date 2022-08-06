@@ -18,10 +18,10 @@ See the table below for status of the project by municipality.  To map a municip
 | Municipality | Population | Size (sq.km) | Pop. Density (per sq.km)| Shapefile | Categories Assigned | Zoning Doc. Link|
 | ------------ | ---------- | ------------ | ------------------------------| --------- | ----------------- |---|
 | Saanich | 117,735 | 103.59 | 1,136.6 | :heavy_check_mark: | :heavy_check_mark: | 
-| Victoria | 91,867 | 19.45 | 4,722.3 | :heavy_check_mark: | [#7](https://github.com/housesforliving/mapping/issues/7) | 
+| Victoria | 91,867 | 19.45 | 4,722.3 | :heavy_check_mark: | [#7](https://github.com/housesforliving/mapping/issues/7) | https://www.victoria.ca/EN/main/residents/planning-development/development-services/zoning/zoning-regulation-bylaw.html Downtown: https://www.victoria.ca/assets/Departments/Planning~Development/Development~Services/Zoning/Bylaws/Zoning%20Bylaw%202018.pdf 
 | Langford | 46,584 | 41.43 | 1,124.4 | :heavy_check_mark: | [#8](https://github.com/housesforliving/mapping/issues/8) | https://www.langford.ca/wp-content/uploads/2020/10/Zoning-Bylaw-20210621.pdf |
 | Colwood | 18,961 | 17.66 | 1,073.6 | :heavy_check_mark: | :heavy_check_mark: | https://colwood.civicweb.net/document/1999/ |
-| Oak Bay | 17,990 | 10.52 | 1,710.1 | :heavy_check_mark: | [#10](https://github.com/housesforliving/mapping/issues/10)| 
+| Oak Bay | 17,990 | 10.52 | 1,710.1 | :heavy_check_mark: | [#10](https://github.com/housesforliving/mapping/issues/10)| https://www.oakbay.ca/sites/default/files/heritage/Consolidated%20Zoning%20Bylaw%20as%20of%20November%2013%2C%202018%20Reduced.pdf
 | Esquimalt | 17,533 | 7.08 | 2,476.7 | :heavy_check_mark: | [#11](https://github.com/housesforliving/mapping/issues/11) | https://www.esquimalt.ca/business-development/building-zoning
 | Central Saanich | 17,385 | 41.20 | 421.9 | :x: | [#12](https://github.com/housesforliving/mapping/issues/12) |
 | Sidney | 12,318 | 5.11 | 2,412.8 | :heavy_check_mark: |[#13](https://github.com/housesforliving/mapping/issues/13) |
