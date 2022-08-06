@@ -1,5 +1,5 @@
 ZONE_ABR,SIMPLIFIED,NOTES
-AG1,Agricultural,
+AG1,Agricultural,NOTE: can have up to two-family dwelling
 AM,,
 BP1,,
 BP1A,,
@@ -14,16 +14,19 @@ BP8,,
 BP9,,
 BT1,,
 C1,Commercial,
-C10,,
+C10,Mixed Use,
 C3,Commercial,
-C5,,
-C6A,,
-C6B,,
-C6C,,
-C8,,
-C8A,,
-C9,,
-CC1,,
+C5,Commercial,
+C6,Commercial,Neighbourhood public house zone
+C6A,Mixed Use,
+C6B,Mixed Use,
+C6C,Mixed Use,
+C8,Mixed Use,Pedestrian oriented
+C8A,Mixed Use,Pedestrian oriented
+C9,Mixed Use,Pedestrian oriented
+CC1,Mixed Use,City Center high density mixed use
+CC2,Apartment,City Center townhomes apartments and assisted living
+CCP,Mixed Use,City Center pedestrian mixed use
 CD10,,
 CD12,,
 CD13,,
@@ -39,63 +42,66 @@ CD20,,
 CD21,,
 CD3,,
 CD4,,
-CD7,,
+CD7,Comprehensive Development,
 CD8,,
 CD9,,
-CH1,,
-CH2,,
-CH3,,
-CH4,,
-CH5,,
-CR2,,
-CS1,,
-CS3,,
-CT3,,
+CH1,Missing Middle,Cluster housing residential
+CH2,Single/Duplex,Cluster housing but one-family
+CH3,Single/Duplex,One-family cluster housing
+CH4,Missing Middle,Cluster housing up to townhomes
+CH5,Missing Middle,Cluster housing up to townhomes
+CR1,Commercial,NOTE: Commercial recreational
+CR2,Commercial,Marina commercial
+CS1,Commercial,
+CS3,Commercial,NOTE: Commercial industrial
+CT1,Commercial,Motel zone - NOTE: includes mini golf and community gardens
+CT2,Commercial,NOTE: recreational? Campground zoning
+CT3,Commercial,Hotel zone
 IR13,,
 M1,Industrial,
 M2,Industrial,
 M3,Industrial,
-MU1,,
-MU1A,,
-MU2,,
-MUE1,,
-MUE2,,
-MUE3,,
-MUE4,,
+MU1,Mixed Use,
+MU1A,Mixed Use,
+MU2,Mixed Use,
+MUE1,Mixed Use,
+MUE2,Mixed Use,
+MUE3,Mixed Use,
+MUE4,Mixed Use,
 P1,,
 P1A,,
 P1B,,
 P2,,
 P3,,
 P4,Recreational,
-R2,Single/Duplex,
-RAE1,,
+R2,Single/Duplex,NOTE:maybe mixed use or missing middle not sure
+RAE1,Mixed Use,
 RCBM1,,
 RCBM2,,
-RH1,,
-RL1,,
-RM1,,
-RM2,,
-RM2A,,
-RM3,Apartment,
-RM3A,,
-RM4,,
-RM7,,
-RM7A,,
-RM8,,
-RM9,,
-RR1,,
-RR2,,
-RR3,,
-RR4,,
-RR5,,
-RR6,,
-RR6A,,
-RR7,,
-RS1,,
+RH1,,Mobile home park but home office and community garden also allowed
+RL1,Single/Duplex,
+RM1,Missing Middle,
+RM2,Missing Middle,
+RM2A,Missing Middle,
+RM3,Apartment,NOTE: also includes townhouses and duplexes
+RM3A,Apartment,NOTE: also includes townhouses and duplexes
+RM4,Apartment,Senior citizens apartment residential
+RM7,Apartment,NOTE: duplexes townhomes and apartments
+RM7A,Apartment,NOTE: duplexes townhomes and apartments
+RM8,Apartment,Assisted living medium density
+RM9,Apartment,Duplexes and townhomes also allowed
+RR1,Rural Residential,NOTE: all rural residential zones can have up to 2-family dwellings plus secondary suites
+RR2,Rural Residential,
+RR3,Rural Residential,
+RR4,Rural Residential,
+RR5,Rural Residential,
+RR6,Rural Residential,NOTE: geared toward one-family dwellings plus carriage houses
+RR6A,Rural Residential,NOTE: geared toward one-family dwellings plus carriage houses
+RR7,Rural Residential,NOTE: geared toward one-family dwellings plus carriage houses
+RS1,Single/Duplex,NOTE: there are townhouse exceptions in doc should check? Might be missing middle approp.
 RS-1,,
 RS4,,
-RT1,,
-RT2,,
-W1,,
-W2,,
+RT1,Missing Middle,NOTE: also community gardens allowed
+RT2,Missing Middle,
+W1,Commercial,Wholesale
+W2,Commercial,Large format business zone
