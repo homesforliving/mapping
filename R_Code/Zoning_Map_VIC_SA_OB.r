@@ -133,6 +133,12 @@ NS_Zones = st_zm(NS_Zones)
 
 ALL_zones <- rbind(COL_Zones, LAN_Zones, ESQ_Zones, HIG_Zones, OB_Zones, NS_Zones, SA_Zones, SID_Zones, VIC_Zones, VR_Zones)
 ALL_zones = ALL_zones %>% st_buffer(0)
+
+# Quality control
+# Remove "Unclassified" from files / map
+ALL_zones$SIMPLIFIED[which(is.na(ALL_zones$SIMPLIFIED))] <- "Unclassified"
+ALL_zones$SIMPLIFIED[which(ALL_zones$SIMPLIFIED == "")] <- "Unclassified"
+
 # Save as output shapefile
 st_write(ALL_zones, "Harmonized_Zones.shp", append = FALSE)
 
