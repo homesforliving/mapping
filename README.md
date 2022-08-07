@@ -24,8 +24,8 @@ See the table below for status of the project by municipality.  To map a municip
 | Oak Bay | 17,990 | 10.52 | 1,710.1 | :heavy_check_mark: | ✔️ | https://www.oakbay.ca/sites/default/files/heritage/Consolidated%20Zoning%20Bylaw%20as%20of%20November%2013%2C%202018%20Reduced.pdf
 | Esquimalt | 17,533 | 7.08 | 2,476.7 | :heavy_check_mark: | ✔️ | https://www.esquimalt.ca/business-development/building-zoning
 | Central Saanich | 17,385 | 41.20 | 421.9 | :x: | [#12](https://github.com/homesforliving/mapping/issues/12) |
-| Sidney | 12,318 | 5.11 | 2,412.8 | :heavy_check_mark: |[#13](https://github.com/homesforliving/mapping/issues/13) |
-| North Saanich | 12,235 | 37.16 | 329.2 | :heavy_check_mark: |[#14](https://github.com/homesforliving/mapping/issues/14)|
+| Sidney | 12,318 | 5.11 | 2,412.8 | :heavy_check_mark: |[#13](https://github.com/homesforliving/mapping/issues/13) | http://www.sidney.ca/Assets/Development+Services/Bylaws/2015+Zoning.pdf
+| North Saanich | 12,235 | 37.16 | 329.2 | :heavy_check_mark: |[#14](https://github.com/homesforliving/mapping/issues/14)| https://northsaanich.ca/wp-content/uploads/1255-Zoning-Bylaw-Consolidated-revised-October-2021.pdf
 | View Royal | 11,575 | 14.33 | 807.6 | ✔️ | ✔️ | https://www.viewroyal.ca/assets/Town~Hall/Bylaws/900%20-%20Zoning%20Bylaw.pdf
 | Metchosin | 5,067 | 69.57 |72.8	| :x: |[#16](https://github.com/homesforliving/mapping/issues/16)|
 | Highlands | 2,482 | 38.01 | 65.3 | :heavy_check_mark: | ✔️ | https://www.highlands.ca/DocumentCenter/View/5053/100---Zoning-Bylaw-No-100-1998-Consolidated-Version---June-4-2018
@@ -33,4 +33,5 @@ See the table below for status of the project by municipality.  To map a municip
 **To-do list:**
 
 * Finish adding municipalities and assigning categories
+* Follow up with missing munis (**Metchosin and Central Saanich**)
 * Quality control check the comments in the .csv files ([#18](https://github.com/homesforliving/mapping/issues/18))
