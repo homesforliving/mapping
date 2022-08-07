@@ -15,7 +15,7 @@ RM2,Missing Middle,
 RS5,Single/Duplex,
 RM4,Apartment,
 RMS7,Apartment,
-RM1MD,Missing Middle,Mid density multiple dwellings NOTE: maybe mixed use
+RM1MD,Missing Middle,"Mid density multiple dwellings NOTE: maybe mixed use. Looking at max height, looks like max 3 stories?"
 RM-MC1,Mixed Use,
 P7,Institutional,
 C4,Commercial,
@@ -27,7 +27,7 @@ C3,Commercial,
 RMMC4,Mixed Use,
 P8,Institutional,
 C1,Commercial,
-RM1HD,Missing Middle,"High density multiple dwellings NOTE: maybe mixed use. Looking at the height restriction (7.4m) looks like MM, not apartments"
+RM1HD,Missing Middle,"High density multiple dwellings NOTE: maybe mixed use. Looking at the height restriction (7.32m) looks like MM, not apartments"
 P9,Institutional,
 RM3HD,Missing Middle,
 C5,Commercial,
