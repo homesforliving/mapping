@@ -1,13 +1,13 @@
 Zone,SIMPLIFIED,NOTES
 C-1,Commercial,
-C-2,Mixed use,
-C-3,Mixed use,
-C-3A,Mixed use,
+C-2,Mixed Use,
+C-3,Mixed Use,
+C-3A,Mixed Use,
 C-4,Commercial,
 C-5A,Commercial,Motel and tourist Commercial. Accessory residential for owner
 C-6,Commercial,
 C-6A,Commercial,"Commercial, accessory residential with 1 unit for accomodation of the owner"
-C-7A,Mixed use,
+C-7A,Mixed Use,
 CD-10,Comprehensive Development,
 CD-100,Comprehensive Development,
 CD-101,Comprehensive Development,
@@ -121,7 +121,7 @@ CD-98,Comprehensive Development,
 CD-99,Comprehensive Development,
 I-1,Industrial,
 I-2,Industrial,
-I-3,Mixed use,"McLOUGHLIN POINT SPECIAL USE - primarily for wastewater treatment plant, but permits other uses (hotel, office, etc.) contigient on environmental/contaminated site reqs"
+I-3,Mixed Use,"McLOUGHLIN POINT SPECIAL USE - primarily for wastewater treatment plant, but permits other uses (hotel, office, etc.) contigient on environmental/contaminated site reqs"
 I-4,Industrial,Utility
 I-5,Industrial,
 M-1,Commercial,"Permits ADU per section 26, for owner use"
@@ -132,7 +132,7 @@ M-5,Unclassified,Docks
 P-1,Institutional,
 P-2,Recreational,
 P-3,Recreational,
-P-5,Mixed use,Community Care Facility
+P-5,Mixed Use,Community Care Facility
 RD-1,Single/Duplex,
 RD-2,Single/Duplex,
 RD-2X,Single/Duplex,
@@ -151,4 +151,4 @@ RS-3,Single/Duplex,
 RS-4,Single/Duplex,
 RS-4A,Single/Duplex,
 RS-5,Single/Duplex,
-TC,Mixed use,
+TC,Mixed Use,
