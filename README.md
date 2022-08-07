@@ -13,7 +13,7 @@ The [simplified zoning categories are listed here](https://github.com/homesforli
 
 **Current Status:**
 
-See the table below for status of the project by municipality.  To map a municipality's zoning to the harmonized set, please assign yourself to the issue linked, then complete the mapping CSV in the associated data folder.
+See the table below for status of the project by municipality.  To map a municipality's zoning to the harmonized set, please assign yourself to the issue linked, then complete the mapping CSV in the associated data folder. Please see [instructions here](https://github.com/homesforliving/mapping/blob/main/Instructions_Details.md).
 
 | Municipality | Population | Size (sq.km) | Pop. Density (per sq.km)| Shapefile | Categories Assigned | Zoning Doc. Link|
 | ------------ | ---------- | ------------ | ------------------------------| --------- | ----------------- |---|
@@ -29,3 +29,8 @@ See the table below for status of the project by municipality.  To map a municip
 | View Royal | 11,575 | 14.33 | 807.6 | ✔️ | ✔️ | https://www.viewroyal.ca/assets/Town~Hall/Bylaws/900%20-%20Zoning%20Bylaw.pdf
 | Metchosin | 5,067 | 69.57 |72.8	| :x: |[#16](https://github.com/homesforliving/mapping/issues/16)|
 | Highlands | 2,482 | 38.01 | 65.3 | :heavy_check_mark: | ✔️ | https://www.highlands.ca/DocumentCenter/View/5053/100---Zoning-Bylaw-No-100-1998-Consolidated-Version---June-4-2018
+
+**To-do list:**
+
+* Finish adding municipalities and assigning categories
+* Quality control check the comments in the .csv files ([#18](https://github.com/homesforliving/mapping/issues/18))
