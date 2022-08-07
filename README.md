@@ -32,6 +32,6 @@ See the table below for status of the project by municipality.  To map a municip
 
 **To-do list:**
 
-* Finish adding municipalities and assigning categories
+* Finish adding municipalities and assigning categories (**Langford, Sidney, North Saanich and Victoria**)
 * Follow up with missing munis (**Metchosin and Central Saanich**)
 * Quality control check the comments in the .csv files ([#18](https://github.com/homesforliving/mapping/issues/18))
