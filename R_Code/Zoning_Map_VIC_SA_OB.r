@@ -139,7 +139,7 @@ ALL_zones = ALL_zones %>% st_buffer(0)
 ALL_zones$SIMPLIFIED[which(is.na(ALL_zones$SIMPLIFIED))] <- "Unclassified"
 ALL_zones$SIMPLIFIED[which(ALL_zones$SIMPLIFIED == "")] <- "Unclassified"
 
-ALL_zones = ALL_zones %>% filter(SIMPLIFIED != "Unclassified")
+# ALL_zones = ALL_zones %>% filter(SIMPLIFIED != "Unclassified")
 
 # Save as output shapefile
 st_write(ALL_zones, "Harmonized_Zones.shp", append = FALSE)
