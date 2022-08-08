@@ -1,45 +1,44 @@
 Zone,SIMPLIFIED,NOTES
-AP-1,,
-C-1,,
-C-2,,
-C-3,,
-C-4,,
-C-5,,
-C-6,,
-CD-1,,
-CD-2,,
-CD-3,,
-CD-4,,
-CD-5,,
-CD-6,,
-CD-7,,
-CS-1,,
-M-1,,
-M-2,,
-M-3,,
-M-4,,
-M-5,,
-M-6,,
-M-7,,
-NA,,
-P-1,,
-P-2,,
-P-3,,
-P-4,,
-P-5,,
-P-6,,
-P-7,,
-P-8,,
-R-1,,
-R-2,,
-R-3,,
-RA-1,,
-RA-2,,
-RA-3,,
-RA-4,,
-RA-5,,
-RA-6,,
-RA-7,,
-RM-1,,
-RM-2,,
-RM-3,,
+AP-1,Industrial,Airport
+C-1,Commercial,
+C-2,Commercial,
+C-3,Commercial,
+C-4,Commercial,
+C-5,Commercial,
+C-6,Commercial,
+CD-1,Single/Duplex,
+CD-2,Single/Duplex,
+CD-3,Single/Duplex,
+CD-4,Single/Duplex,
+CD-5,Single/Duplex,
+CD-6,Single/Duplex,
+CD-7,Missing Middle,
+CS-1,Industrial,
+M-1,Unclassified,Commercial Wharf
+M-2,Unclassified,Commercial Marina
+M-3,Commercial,Commercial waterfront
+M-4,Unclassified,Commercial Marina
+M-5,Unclassified,Non-Commercial Marine
+M-6,Unclassified,Non-Commercial Marine
+M-7,Unclassified,Marine pub
+P-1,Recreational,community use
+P-2,Recreational,public assembly
+P-3,Institutional,Education and research
+P-4,Recreational,Park
+P-5,Recreation,Private common area/open space
+P-6,Agriculture,Sandown community agricultural
+P-7,Mixed Use,Educational and industrial
+P-8,Mixed Use,Public assembly mixed use
+R-1,Single/Duplex,
+R-2,Rural Residential,
+R-3,Single/Duplex,
+RA-1,Rural Residential,
+RA-2,Rural Residential,
+RA-3,Rural Residential,
+RA-4,Rural Residential,
+RA-5,Rural Residential,
+RA-6,Rural Residential,
+RA-7,Rural Residential,
+RM-1,Missing Middle,
+RM-2,Apartment,
+RM-3,Apartment,
